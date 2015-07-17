@@ -1,0 +1,38 @@
+body {
+  background: url('../images/select_new.png') no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+#select a {
+  display: inline-block;
+  width: 0.72rem;
+  height: 0.72rem;
+  background-color: #333;
+  border-radius: 0.36rem;
+  text-align: center;
+}
+#select a span {
+  color: #b4b4b6;
+  display: block;
+  font-size: 0.15rem;
+  margin-top: -0.28rem;
+}
+#select .icon_01 {
+  position: absolute;
+  background-color: #8e6336;
+  background-color: -webkit-gradient(linear, 0 0, 0 100%, from(#2074af), to(#2c91d2));
+  left: 0.26rem;
+  top: 3.6rem;
+}
+#select .icon_02 {
+  position: absolute;
+  background-color: #f4f4f4;
+  left: 1.3rem;
+  top: 3.96rem;
+}
+#select .icon_03 {
+  position: absolute;
+  background-color: #9b7729;
+  left: 2.36rem;
+  top: 3.6rem;
+}

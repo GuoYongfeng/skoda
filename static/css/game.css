@@ -1,0 +1,12 @@
+body {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e5bd68), to(#b69248));
+}
+.control {
+  position: fixed;
+  bottom: 0.3rem;
+  background-color: #ccc;
+}
+.control .ctrl_common {
+  width: 0.8rem;
+  height: 0.8rem;
+}

@@ -1,0 +1,57 @@
+body {
+  background: url('../images/user_gameover_bg.png') no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+#user_finished {
+  padding: 0.27rem 4.58%;
+  font-size: 0.17rem;
+  color: #dadada;
+}
+header {
+  text-align: center;
+}
+header img {
+  width: 0.37rem;
+  height: 0.37rem;
+  border-radius: 0.05rem;
+}
+header h3 {
+  line-height: 0.5rem;
+}
+section {
+  height: 2rem;
+  padding-bottom: 0.25rem;
+}
+p {
+  text-align: center;
+  line-height: 0.32rem;
+}
+p strong {
+  color: #f9a401;
+}
+input {
+  border: none;
+}
+.phone {
+  margin-top: 0.25rem;
+  height: 0.48rem;
+  text-align: center;
+  line-height: 0.48rem;
+  width: 100%;
+  color: #34235b;
+  font-size: 0.17rem;
+  border-radius: 0.05rem;
+}
+.btn {
+  margin-top: 0.15rem;
+  height: 0.48rem;
+  text-align: center;
+  line-height: 0.48rem;
+  width: 100%;
+  background-color: #f9b001;
+  color: #34235b;
+  font-size: 0.17rem;
+  border-radius: 0.05rem;
+  letter-spacing: 0.02rem;
+}
