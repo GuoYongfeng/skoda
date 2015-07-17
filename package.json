@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.7.13",
+    "browserify": "^10.2.6",
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-less": "^3.0.3",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -1,0 +1,28 @@
+#intro {
+  position: relative;
+}
+.wrap {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 0.6rem;
+}
+.wrap a {
+  display: inline-block;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  width: 80%;
+  background-color: #f9b001;
+  color: #34235b;
+  font-size: 0.16rem;
+  border-radius: 0.05rem;
+  letter-spacing: 0.01rem;
+}
+h3 {
+  position: absolute;
+  bottom: 0.2rem;
+  width: 100%;
+  font-size: 0.18rem;
+  color: #bb8e2e;
+  text-align: center;
+}

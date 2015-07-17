@@ -1,0 +1,25 @@
+.mask {
+  display: none;
+  padding: 0.3rem 10%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(54, 64, 73, 0.9);
+  font-size: 0.15rem;
+  color: #cabdcf;
+  line-height: 0.28rem;
+}
+.mask ul {
+  list-style-type: decimal;
+  margin-left: 0.18rem;
+}
+.mask span {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  background: url('../../images/close.png') no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.25rem;
+}
