@@ -11,13 +11,29 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/common/reset.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/game.css">
 	<script type="text/javascript" src="../static/js/common/zepto.js"></script>
+	<script type="text/javascript" src
+	="../static/js/game.js"></script>
 
 </head>
 <body>
+	<div class="time_container">
+		<div class="time_bg">
+			<div class="time"></div>
+		</div>
+		<span><span id="count">60</span>S</span>
+	</div>
+	<div class="game_element_container">
+		
+	</div>
 	<div class="control">
-		<div class="left ctrl_common"></div>
+		<div id="left" class="left ctrl_common"></div>
 		<div class="car"></div>
 		<div class="right ctrl_common"></div>
 	</div>
+	<script type="text/javascript">
+
+		Game.init();
+
+	</script>
 </body>
 </html>

@@ -1,12 +1,61 @@
 body {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#e5bd68), to(#b69248));
+  overflow: hidden;
 }
 .control {
   position: fixed;
-  bottom: 0.3rem;
-  background-color: #ccc;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
 }
 .control .ctrl_common {
   width: 0.8rem;
   height: 0.8rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+}
+.control .left {
+  background-image: url('../images/left.png');
+  left: 10%;
+}
+.control .right {
+  background-image: url('../images/right.png');
+  right: 10%;
+}
+.control .car {
+  width: 0.625rem;
+  height: 1.1rem;
+  background: url('../images/car.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 42%;
+  top: -1.1rem;
+}
+.time_container {
+  width: 100%;
+  text-align: center;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.time_container .time_bg {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  height: 0.15rem;
+  background-color: #757575;
+  border-radius: 0.075rem;
+}
+.time_container .time {
+  width: 100%;
+  text-align: center;
+  height: 0.15rem;
+  background-color: #61b623;
+  border-radius: 0.075rem;
+}
+.time_container span {
+  color: #a03d3d;
+  font-weight: bold;
+  font-size: 0.16rem;
+  margin-left: 0.05rem;
 }
