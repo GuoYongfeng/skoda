@@ -27,8 +27,8 @@
 <body>
 	<div id="friend_originate">
 		<header>
-			<img src="../static/images/icon_header.png">
-			<h3>恭喜！张美男帮Jane跑完了全程！</h3>
+			<img src="<?php echo $this->v['inviti_user']['img_url'];?>">
+            <h3><?php echo $this->v['suc_msg'];?></h3>
 		</header>
 		<section>
 			<div class="circle">
@@ -46,15 +46,15 @@
 			</div>
 		</section>
 		<p>
-			由于你的助力<br>
-			JANE获得了100M流量和大礼包！
+        <?php echo $this->v['desc1'];?><br>
+        <?php echo $this->v['desc2'];?><br>
 		</p>
-		<div class="btn">我也要发起</div>
+        <div class="btn"><a href="/weixin/start_game">我也要发起</a></div>
 	
 	</div>
 	<script type="text/javascript">
 		var data = {
-			cur: '100',
+cur: '<?php echo $this->v["percent"];?>',
 			cur_has_score: true
 		};
 
