@@ -85,9 +85,6 @@ var Game = {
 		this.run();
 		
 		this.dropDown();
-		// this.caculate();
-		// console.log($('.car').offset());
-		// $('.car').css({left: 0, top: 0})
 
 	},
 
@@ -170,7 +167,7 @@ var Game = {
 
 			$('.game_element_container').css({top:$('.game_element_container').offset().top + step }, 'linear' );
 			// _this.caculate();
-			
+
 		}, 10);
 	},
 
