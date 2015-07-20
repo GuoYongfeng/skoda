@@ -3,7 +3,7 @@ body {
   background-size: 100% auto;
   background-attachment: fixed;
 }
-#select a {
+#select span {
   display: inline-block;
   width: 0.72rem;
   height: 0.72rem;
@@ -11,7 +11,8 @@ body {
   border-radius: 0.36rem;
   text-align: center;
 }
-#select a span {
+#select span i {
+  font-style: normal;
   color: #b4b4b6;
   display: block;
   font-size: 0.15rem;
@@ -22,17 +23,50 @@ body {
   background-color: #8e6336;
   background-color: -webkit-gradient(linear, 0 0, 0 100%, from(#2074af), to(#2c91d2));
   left: 0.26rem;
-  top: 3.6rem;
+  top: 3.3rem;
 }
 #select .icon_02 {
   position: absolute;
   background-color: #f4f4f4;
   left: 1.3rem;
-  top: 3.96rem;
+  top: 3.66rem;
 }
 #select .icon_03 {
   position: absolute;
   background-color: #9b7729;
   left: 2.36rem;
-  top: 3.6rem;
+  top: 3.3rem;
+}
+.car {
+  width: 100%;
+  height: 1.75rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 1.3rem;
+}
+.car_02 {
+  background-image: url('../images/car_01.png');
+}
+.car_01 {
+  background-image: url('../images/car_02.png');
+}
+.car_03 {
+  background-image: url('../images/car_03.png');
+}
+.btn {
+  display: inline-block;
+  margin-top: 0.25rem;
+  height: 0.48rem;
+  text-align: center;
+  line-height: 0.48rem;
+  width: 90%;
+  background-color: #f9b001;
+  color: #34235b;
+  font-size: 0.17rem;
+  border-radius: 0.05rem;
+  letter-spacing: 0.02rem;
+  position: absolute;
+  bottom: 0.6rem;
+  left: 5%;
 }

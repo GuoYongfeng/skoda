@@ -1,13 +1,17 @@
 $(function(){
-	$('a').on('tap', function( e ){
+	var data = {
+		color_num: ''
+	};
+
+	$('span').on('tap', function( e ){
 		var el = e.target;
 		var colorNum = $(el).data('color');
-		var data = {
-			color_num: colorNum
-		};
+		var colorClass = $(el).data('img');
 
-		send(data);
-		
+		$('.car').removeClass('car_01 car_02 car_03').addClass(colorClass);
+		data.color_num = colorNum;
+
+				
 	});
 
 	function send(data){
