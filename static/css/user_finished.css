@@ -43,6 +43,16 @@ input {
   font-size: 0.17rem;
   border-radius: 0.05rem;
 }
+.name {
+  margin-top: 0.05rem;
+  height: 0.48rem;
+  text-align: center;
+  line-height: 0.48rem;
+  width: 100%;
+  color: #34235b;
+  font-size: 0.17rem;
+  border-radius: 0.05rem;
+}
 .btn {
   margin-top: 0.15rem;
   height: 0.48rem;
