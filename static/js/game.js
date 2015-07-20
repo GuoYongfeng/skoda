@@ -114,7 +114,7 @@ var Game = {
 	],
 
 	targets: [],
-
+	scores: [],
 	init: function(){
 		var _this = this;
 
@@ -130,6 +130,7 @@ var Game = {
 
 		event_center.on('change_miles', function( res ){
 			_this.toast(res);
+			_this.scores.push(res>0?'+'+res:res);
 		});
 	},
 
@@ -142,7 +143,6 @@ var Game = {
 			return ;
 		}
 
-
 		toastTimer = setTimeout(function(){
 			clearTimeout(toastTimer);
 			toastTimer = null;
@@ -152,20 +152,20 @@ var Game = {
 		
 	},
 
-	pop: function(){
+	pop: function(s){
 
 		var tpls = this.tpls();
 		
 		function initModal () {
 			var modal;
 
-			return function (url, txt){
+			return function (txt){
 				if( modal ){
 					modal.show();
 				}else{
 					modal = new Modal({
 						content : tpls,
-						confirmText : "你已奔跑5KM"
+						confirmText : "你已奔跑了" + (30+ s)/10 + "KM"
 					});
 					modal.show();
 				}
@@ -256,7 +256,19 @@ var Game = {
 			}else{
 				clearInterval(clock);
 				$('#count').val('0');
-				_this.pop();	
+				var s = _this.scores.join('');
+					
+				_this.pop(eval(s));
+				$.ajax({
+					method: "POST",
+					data: {
+						distance: (30 + eval(s))*500
+					},
+					url: '/weixin/_game_end',
+					success: function(res){
+						
+					}
+				})
 			}
 			
 		}, 1000);
@@ -276,7 +288,6 @@ var Game = {
 		var dropClock = setInterval(function(){
 
 			$('.game_element_container').css({top:$('.game_element_container').offset().top + step }, 'linear' );
-			
 
 		}, 10);
 	},
