@@ -40,21 +40,11 @@ weichatSDK.pri = {
 	 * @return {[type]}            [description]
 	 */
 	getSdkApi : function(callback){
-		$.ajax({
-			method: "GET",
-			url: weichatSDK.pri.url+"?fr="+encodeURIComponent(location.href.split('#')[0],
-			success: function(res){
-				alert('callback');
-				if(typeof callback == 'function'){
-					callback(res);
-				}
+		$.get(weichatSDK.pri.url+"?fr="+encodeURIComponent(location.href.split('#')[0]), function(res){
+			if(typeof callback == 'function'){
+				callback(res);
 			}
-		})
-		// $.get(weichatSDK.pri.url+"?fr="+encodeURIComponent(location.href.split('#')[0]), function(res){
-		// 	if(typeof callback == 'function'){
-		// 		callback(res);
-		// 	}
-		// });
+		});
 	},
 }
 weichatSDK.prototype = {

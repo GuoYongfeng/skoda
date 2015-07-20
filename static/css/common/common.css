@@ -178,7 +178,7 @@
 .ui-modal .main {
   margin: 20% 5%;
   width: 90%;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);;
   border-radius: 0.04rem;
   vertical-align: middle;
 }
@@ -206,11 +206,38 @@
   line-height: 0.5rem;
   text-align: center;
 }
-.ui-modal .main .control a {
+.ui-modal .main a {
   font-size: 0.16rem;
-  color: #ff8903;
+  display: inherit;
   border: none;
-  color: #ff9012;
-  background-color: #fff;
   letter-spacing: 0.1rem;
+  text-align: center;
+  background-color: #fab001;
+  width: 80%;
+  padding: 0.1rem 0;
+  margin: 0.0rem 10% 0.2rem 10%;
+  color: #35245a;
+  border-radius: 0.05rem;
+}
+.ui-modal .main ul{
+  overflow: hidden;
+  margin-left: 4%;
+}
+.ui-modal .main ul span{
+  vertical-align: top;
+  text-align: center;
+  font-size: 0.18rem;
+  padding-left: 0.05rem;
+}
+.ui-modal .main img{
+  width: 1.2rem;
+  height: 0.7rem;
+}
+.ui-modal .main li{
+  float: left;
+  margin-left: 0.1rem;
+}
+.ui-modal .main ul img{
+  width: 0.3rem;
+  height: 0.3rem;
 }

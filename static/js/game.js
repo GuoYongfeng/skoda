@@ -4,6 +4,7 @@
  */
 
 var times = 30;
+var Modal = Modal;
 
 /**
  * 游戏基类
@@ -155,13 +156,55 @@ var Game = {
 
 		this.dropDown();
 
-		// setInterval(function(){
+		this.pop();		
+	},
 
-		// 	_this.caculate();
-			
-		// }, 1000);
+	pop: function(){
 
+		$('#count').on('change', function(){
+			alert('======');
+
+		});
+
+		// var tpls = this.tpls();
 		
+		// function initModal () {
+		// 	var modal;
+
+		// 	return function (url, txt){
+		// 		if( modal ){
+		// 			modal.show();
+		// 		}else{
+		// 			modal = new Modal({
+		// 				content : tpls,
+		// 				confirmText : "查看结果"
+		// 			});
+		// 			modal.show();
+		// 		}
+
+		// 		return modal;
+		// 	}
+		// }
+
+		// $(function(){
+		// 	var modal,
+		// 		show = initModal();
+		// 		modal = show();
+			
+		// });
+	},
+
+	tpls: function(count1, count2, count3, count4){
+		var tpls = '';
+
+		tpls = '<img src="../static/images/game_05.png">' + 
+				'<ul>' + 
+				'<li><img src="../static/images/game_01.png"><span>2</span></li>' + 
+				'<li><img src="../static/images/game_02.png"><span>2</span></li>' + 
+				'<li><img src="../static/images/game_03.png"><span>2</span></li>' + 
+				'<li><img src="../static/images/game_04.png"><span>2</span></li>' + 
+				'</ul>';
+		return tpls;
 	},
 
 	leftCtl: function(){

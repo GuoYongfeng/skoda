@@ -29,6 +29,9 @@ p {
   line-height: 0.24rem;
   margin-top: 0.2rem;
 }
+p strong {
+  color: #f9a401;
+}
 .btn {
   margin-top: 0.15rem;
   height: 0.48rem;

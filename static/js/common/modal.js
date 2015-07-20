@@ -31,20 +31,20 @@ Modal.prototype = {
 		
 		var html = [];
 		html.push('<div class="main">');
-			if(this.conf.title !== ''){
-				html.push('<div class="title">');
-					html.push('<span>'+this.conf.title+'</span>');
-				html.push('</div>');
-			}
+			// if(this.conf.title !== ''){
+			// 	html.push('<div class="title">');
+			// 		html.push('<span>'+this.conf.title+'</span>');
+			// 	html.push('</div>');
+			// }
 			html.push('<div class="content">');
 				html.push(this.conf.content);
 			html.push('</div>');
 
-			if(this.conf.confirmText){
-				html.push('<div class="control">');
-					html.push('<a href="" class="btn-close">'+this.conf.confirmText+'</a>');
-				html.push('</div>');
-			}
+			// if(this.conf.confirmText){
+				// html.push('<div class="control">');
+					html.push('<a href="" class="btn-href">'+this.conf.confirmText+'</a>');
+				// html.push('</div>');
+			// }
 
 		html.push("</div>");
 		this.dom.instance.html(html.join(''));
