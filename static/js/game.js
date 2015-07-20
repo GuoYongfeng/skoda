@@ -148,7 +148,7 @@ var Game = {
 			toastTimer = null;
 			$('#toast').removeClass('toast').text('');
 
-		},1500);
+		},500);
 		
 	},
 
