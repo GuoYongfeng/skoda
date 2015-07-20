@@ -1,0 +1,19 @@
+body {
+  background: url('../images/suc.png') no-repeat;
+  background-size: 100% auto;
+}
+a {
+  display: inline-block;
+  position: absolute;
+  bottom: 0.2rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  text-align: center;
+  width: 80%;
+  left: 10%;
+  background-color: #f9b001;
+  color: #34235b;
+  font-size: 0.17rem;
+  border-radius: 0.05rem;
+  letter-spacing: 0.02rem;
+}

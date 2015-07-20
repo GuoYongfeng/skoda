@@ -33,7 +33,7 @@ weichatSDK.pri = {
 	 * @url {String} [API post请求地址]
 	 * @type {String}
 	 */
-	url : "./weixin/get_weichat_ticket",
+	url : "http://skoda.tc166.com/weixin/get_weichat_ticket",
 	/**
 	 * getSdkApi post请求获取SDK API
 	 * @param  {Function} callback [description]
