@@ -303,7 +303,7 @@ var Game = {
 
 		setInterval(function(){
 			_this.targets.forEach(function(item, index, input){
-				if((item.offset().top - $('.car').offset().top) < 140 && (item.offset().top - $('.car').offset().top) > 40 ) {
+				if((item.offset().top - $('.car').offset().top) < 100 && (item.offset().top - $('.car').offset().top) > 60 ) {
 					
 					event_center.fire('change_miles', item.data('score'));
 					
