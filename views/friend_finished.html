@@ -52,14 +52,14 @@
 		<div class="btn">帮他继续跑</div>
 	</div>
 	<script type="text/javascript">
-		var share_title = '极地奔跑 兄弟助力';
-		var share_desc = '奔跑吧，Yeti！极地奔跑，兄弟助力，人人都领100M！';
-		var share_url = 'www.ppzuche.com';
-		var share_logo = 'http://cdn.ppzuche.cn/img/1505/3/150531ec6b52eb21.jpg';
+        var share_title = '<?php echo $this->v['share_title']; ?>';
+        var share_desc = '<?php echo $this->v['share_desc'];?>';
+        var share_url = '<?php echo $this->v['share_url'];?>';
+        var share_logo = '<?php echo $this->v['share_logo'];?>';
 
 		var weichat = new weichatSDK({
-			checkJSApi : true,
-			debug : true,
+			checkJSApi : false,
+			debug : false,
 		    title: share_title,
 		    desc: share_desc,
 		    link: share_url,
