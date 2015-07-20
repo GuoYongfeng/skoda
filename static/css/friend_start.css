@@ -1,10 +1,10 @@
 body {
   background: url('../images/user_gameover_bg.png') no-repeat;
   background-size: 100% auto;
-  background-attachment: fixed;
 }
 #friend_start {
   padding: 0.27rem 4.58%;
+  padding-bottom: 0;
   font-size: 0.17rem;
   color: #dadada;
 }
