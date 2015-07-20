@@ -48,10 +48,11 @@
 		<p>
 			太棒了！兄弟们帮你跑完了<br>你获得了<strong>100M</strong>流量！
 		</p>
-		<form action="" method="POST">
-			<input type="text" class="phone" name="phone" placeholder="请输入您的手机号">
-			<input type="submit" class="btn" value="领取"></input>
-		</form>
+        <div id="form">
+            <input type="text"  id="id_phone" class="phone" name="phone" placeholder="请输入您的手机号">
+            <input type="text" id="id_name" class="name" name="name" placeholder="请输入您的姓名">
+            <input type="button" id="id_btn" class="btn" value="领取"></input>
+        </div>
 	</div>
 	<div class="friend_info">
 		<h3>Yeti奔跑榜</h3><span></span>
@@ -85,6 +86,34 @@
 
 
 	<script type="text/javascript">
+        $("#id_btn").bind('click',function()
+                {
+                var phone = $("#id_phone").val();
+                var name = $("#id_name").val();
+                if(phone=="")
+                {
+                alert("请填写手机号");
+                return;
+                }
+                if(name=="") 
+                {
+                alert("请填写姓名");
+                return;
+                }
+                if (!phone.match(/^1\d{10}$/))
+                {
+                alert("请正确填写手机号");
+                return;
+                }
+                $.ajax({
+                type: "POST",
+                url: "/weixin/_receive_liuliang",
+                data: "name="+name+"&phone="+phone,
+                success: function(data){
+                location.reload();
+}
+});
+                });
 		var data = {
 cur: '<?php echo $this->v['percent'];?>',
 			cur_has_score: true
