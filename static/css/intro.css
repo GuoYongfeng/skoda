@@ -7,7 +7,7 @@ body {
   width: 100%;
   position: absolute;
   text-align: center;
-  bottom: 0.9rem;
+  bottom: 0.6rem;
 }
 .wrap a {
   display: inline-block;
@@ -22,9 +22,9 @@ body {
 }
 h3 {
   position: absolute;
-  bottom: 0.4rem;
+  bottom: 0.2rem;
   width: 100%;
-  font-size: 0.18rem;
+  font-size: 0.14rem;
   color: #bb8e2e;
   text-align: center;
 }
