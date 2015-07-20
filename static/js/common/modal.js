@@ -42,7 +42,7 @@ Modal.prototype = {
 
 			// if(this.conf.confirmText){
 				// html.push('<div class="control">');
-					html.push('<a href="" class="btn-href">'+this.conf.confirmText+'</a>');
+					html.push('<a href="/weixin/game_end" class="btn-href">'+this.conf.confirmText+'</a>');
 				// html.push('</div>');
 			// }
 

@@ -268,7 +268,7 @@ var Game = {
 				$.ajax({
 					type: "POST",
 					data: {
-						distance: (30 + eval(s))*500
+						distance: (30 + eval(s))*100
 					},
 					url: '/weixin/_game_end',
 					success: function(res){
