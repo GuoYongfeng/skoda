@@ -14,67 +14,66 @@ var Game = {
 	moveRightFlag: false,
 	imgPathArr: [
 		// 奖励和处罚元素
-		[0.7, 0.7, 170, 270, -2, "../static/images/money.png"],
-		[0.7, 0.7, 130, 110, -2, "../static/images/gift.png"],
-		[0.7, 0.7, 30, 370, -2, "../static/images/stone.png"],
-		[0.7, 0.7, 250, 200, -2, "../static/images/obstacle.png"],
+		[0.7, 0.7, 170, 270, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200, "../static/images/obstacle.png", false, -2],
 		// 沙漠左边沙丘
-		[1.3, 0.75, 0, 30, -2, "../static/images/left_double_small.png"],
-		[0.85, 0.87, 0, 200, -2, "../static/images/left_single_big.png"],
-		[0.75, 0.75, 0, 440, -2, "../static/images/left_single_small.png"],
+		[1.3, 0.75, 0, 30, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440, "../static/images/left_single_small.png", false],
 		// 沙漠右边沙丘
-		[1.18, 0.9, 0, 400, -2, "../static/images/right_double_small.png", true],
-		[0.8, 0.8, 0, 220, -2, "../static/images/right_single_big.png", true],
-		[0.61, 0.64, 0, 40, -2, "../static/images/right_single_small.png", true],
+		[1.18, 0.9, 0, 400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40, "../static/images/right_single_small.png", true],
 
 		// 第二屏
-		
-		[0.7, 0.7, 170, 270 + 600, -2, "../static/images/money.png"],
-		[0.7, 0.7, 130, 110 + 600, -2, "../static/images/gift.png"],
-		[0.7, 0.7, 30, 370 + 600, -2, "../static/images/stone.png"],
-		[0.7, 0.7, 250, 200 + 600, -2, "../static/images/obstacle.png"],
-		[1.3, 0.75, 0, 30 + 600, -2, "../static/images/left_double_small.png"],
-		[0.85, 0.87, 0, 200 + 600, -2, "../static/images/left_single_big.png"],
-		[0.75, 0.75, 0, 440 + 600, -2, "../static/images/left_single_small.png"],
-		[1.18, 0.9, 0, 400 + 600, -2, "../static/images/right_double_small.png", true],
-		[0.8, 0.8, 0, 220 + 600, -2, "../static/images/right_single_big.png", true],
-		[0.61, 0.64, 0, 40 + 600, -2, "../static/images/right_single_small.png", true],
+		[0.7, 0.7, 170, 270 + 600, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 600, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 600, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 600, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 600, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 600, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 600, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 600, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 600, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 600, "../static/images/right_single_small.png", true],
 
 		// 第三屏
-		[0.7, 0.7, 170, 270 + 1200, -2, "../static/images/money.png"],
-		[0.7, 0.7, 130, 110 + 1200, -2, "../static/images/gift.png"],
-		[0.7, 0.7, 30, 370 + 1200, -2, "../static/images/stone.png"],
-		[0.7, 0.7, 250, 200 + 1200, -2, "../static/images/obstacle.png"],
-		[1.3, 0.75, 0, 30 + 1200, -2, "../static/images/left_double_small.png"],
-		[0.85, 0.87, 0, 200 + 1200, -2, "../static/images/left_single_big.png"],
-		[0.75, 0.75, 0, 440 + 1200, -2, "../static/images/left_single_small.png"],
-		[1.18, 0.9, 0, 400 + 1200, -2, "../static/images/right_double_small.png", true],
-		[0.8, 0.8, 0, 220 + 1200, -2, "../static/images/right_single_big.png", true],
-		[0.61, 0.64, 0, 40 + 1200, -2, "../static/images/right_single_small.png", true],
+		[0.7, 0.7, 170, 270 + 1200, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 1200, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 1200, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 1200, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 1200, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 1200, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 1200, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 1200, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 1200, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 1200, "../static/images/right_single_small.png", true],
 
 		// 第四屏
-		[0.7, 0.7, 170, 270 + 1800, -2, "../static/images/money.png"],
-		[0.7, 0.7, 130, 110 + 1800, -2, "../static/images/gift.png"],
-		[0.7, 0.7, 30, 370 + 1800, -2, "../static/images/stone.png"],
-		[0.7, 0.7, 250, 200 + 1800, -2, "../static/images/obstacle.png"],
-		[1.3, 0.75, 0, 30 + 1800, -2, "../static/images/left_double_small.png"],
-		[0.85, 0.87, 0, 200 + 1800, -2, "../static/images/left_single_big.png"],
-		[0.75, 0.75, 0, 440 + 1800, -2, "../static/images/left_single_small.png"],
-		[1.18, 0.9, 0, 400 + 1800, -2, "../static/images/right_double_small.png", true],
-		[0.8, 0.8, 0, 220 + 1800, -2, "../static/images/right_single_big.png", true],
-		[0.61, 0.64, 0, 40 + 1800, -2, "../static/images/right_single_small.png", true],
+		[0.7, 0.7, 170, 270 + 1800, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 1800, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 1800, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 1800, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 1800, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 1800, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 1800, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 1800, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 1800, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 1800, "../static/images/right_single_small.png", true],
 
 		// 第五屏
-		[0.7, 0.7, 170, 270 + 2400, -2, "../static/images/money.png"],
-		[0.7, 0.7, 130, 110 + 2400, -2, "../static/images/gift.png"],
-		[0.7, 0.7, 30, 370 + 2400, -2, "../static/images/stone.png"],
-		[0.7, 0.7, 250, 200 + 2400, -2, "../static/images/obstacle.png"],
-		[1.3, 0.75, 0, 30 + 2400, -2, "../static/images/left_double_small.png"],
-		[0.85, 0.87, 0, 200 + 2400, -2, "../static/images/left_single_big.png"],
-		[0.75, 0.75, 0, 440 + 2400, -2, "../static/images/left_single_small.png"],
-		[1.18, 0.9, 0, 400 + 2400, -2, "../static/images/right_double_small.png", true],
-		[0.8, 0.8, 0, 220 + 2400, -2, "../static/images/right_single_big.png", true],
-		[0.61, 0.64, 0, 40 + 2400, -2, "../static/images/right_single_small.png", true],
+		[0.7, 0.7, 170, 270 + 2400, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 2400, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 2400, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 2400, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 2400, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 2400, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 2400, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 2400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
 
 	],
 	init: function(){
@@ -86,6 +85,9 @@ var Game = {
 		this.run();
 		
 		this.dropDown();
+		// this.caculate();
+		// console.log($('.car').offset());
+		// $('.car').css({left: 0, top: 0})
 
 	},
 
@@ -168,6 +170,7 @@ var Game = {
 
 			$('.game_element_container').css({top:$('.game_element_container').offset().top + step }, 'linear' );
 			// _this.caculate();
+			
 		}, 10);
 	},
 
@@ -180,9 +183,12 @@ var Game = {
 
 		imgs.forEach(function(item, index, input){
 			var el = $(item);
-			var offset = el.offset().top;
+			var data = el.attr('data-score');
 
-			console.log(offset);
+			if(undefined != data){
+				var pos = el.offset();
+				console.log(pos);
+			}
 
 		});
 		
@@ -196,7 +202,7 @@ var Game = {
  * @param {[type]} score    [description]
  * @param {[type]} imagesrc [description]
  */
-function creatEle(width,height,X,Y,score,imagesrc,RightConf){
+function creatEle(width,height,X,Y,imagesrc,RightConf,score){
     this.planX=X;
     this.planY=Y;
     this.imagenode=null;
@@ -215,7 +221,11 @@ function creatEle(width,height,X,Y,score,imagesrc,RightConf){
         this.imagenode.style.top = this.planY+"px";
         this.imagenode.style.position = 'absolute';
         this.imagenode.src = imagesrc;
-        this.imagenode.setAttribute('data-score', this.planscore);
+        if(score){
+        	this.imagenode.setAttribute('data-score', this.planscore);
+        }
+        
+        this.imagenode.setAttribute('id', guid());
         $('.game_element_container').append(this.imagenode);
     }
 
@@ -242,101 +252,101 @@ var guid = (function() {
     };
 })();
 
-// function getPosition(element) {
-//     element = baidu.dom.g(element);
-//     var doc = baidu.dom.getDocument(element), 
-//         browser = baidu.browser,
-//         getStyle = baidu.dom.getStyle,
-//     // Gecko 1.9版本以下用getBoxObjectFor计算位置
-//     // 但是某些情况下是有bug�?
-//     // 对于这些有bug的情�?
-//     // 使用递归查找的方�?
-//         BUGGY_GECKO_BOX_OBJECT = browser.isGecko > 0 && 
-//                                  doc.getBoxObjectFor &&
-//                                  getStyle(element, 'position') == 'absolute' &&
-//                                  (element.style.top === '' || element.style.left === ''),
-//         pos = {"left":0,"top":0},
-//         viewport = (browser.ie && !browser.isStrict) ? doc.body : doc.documentElement,
-//         parent,
-//         box;
+function getPosition(element) {
+    element = baidu.dom.g(element);
+    var doc = baidu.dom.getDocument(element), 
+        browser = baidu.browser,
+        getStyle = baidu.dom.getStyle,
+    // Gecko 1.9版本以下用getBoxObjectFor计算位置
+    // 但是某些情况下是有bug�?
+    // 对于这些有bug的情�?
+    // 使用递归查找的方�?
+        BUGGY_GECKO_BOX_OBJECT = browser.isGecko > 0 && 
+                                 doc.getBoxObjectFor &&
+                                 getStyle(element, 'position') == 'absolute' &&
+                                 (element.style.top === '' || element.style.left === ''),
+        pos = {"left":0,"top":0},
+        viewport = (browser.ie && !browser.isStrict) ? doc.body : doc.documentElement,
+        parent,
+        box;
     
-//     if(element == viewport){
-//         return pos;
-//     }
+    if(element == viewport){
+        return pos;
+    }
 
 
-//     if(element.getBoundingClientRect){ // IE and Gecko 1.9+
+    if(element.getBoundingClientRect){ // IE and Gecko 1.9+
         
-//         //当HTML或者BODY有border width�? 原生的getBoundingClientRect返回值是不符合预期的
-//         //考虑到通常情况�?HTML和BODY的border只会设成0px,所以忽略该问题.
-//         box = element.getBoundingClientRect();
+        //当HTML或者BODY有border width�? 原生的getBoundingClientRect返回值是不符合预期的
+        //考虑到通常情况�?HTML和BODY的border只会设成0px,所以忽略该问题.
+        box = element.getBoundingClientRect();
 
-//         pos.left = Math.floor(box.left) + Math.max(doc.documentElement.scrollLeft, doc.body.scrollLeft);
-//         pos.top  = Math.floor(box.top)  + Math.max(doc.documentElement.scrollTop,  doc.body.scrollTop);
+        pos.left = Math.floor(box.left) + Math.max(doc.documentElement.scrollLeft, doc.body.scrollLeft);
+        pos.top  = Math.floor(box.top)  + Math.max(doc.documentElement.scrollTop,  doc.body.scrollTop);
         
-//         // IE会给HTML元素添加一个border，默认是medium�?px�?
-//         // 但是在IE 6 7 的怪异模式下，可以被html { border: 0; } 这条css规则覆盖
-//         // 在IE7的标准模式下，border永远�?px，这个值通过clientLeft �?clientTop取得
-//         // 但是。。。在IE 6 7的怪异模式，如果用户使用css覆盖了默认的medium
-//         // clientTop和clientLeft不会更新
-//         pos.left -= doc.documentElement.clientLeft;
-//         pos.top  -= doc.documentElement.clientTop;
+        // IE会给HTML元素添加一个border，默认是medium�?px�?
+        // 但是在IE 6 7 的怪异模式下，可以被html { border: 0; } 这条css规则覆盖
+        // 在IE7的标准模式下，border永远�?px，这个值通过clientLeft �?clientTop取得
+        // 但是。。。在IE 6 7的怪异模式，如果用户使用css覆盖了默认的medium
+        // clientTop和clientLeft不会更新
+        pos.left -= doc.documentElement.clientLeft;
+        pos.top  -= doc.documentElement.clientTop;
         
-//         var htmlDom = doc.body,
-//             // 在这里，不使用element.style.borderLeftWidth，只有computedStyle是可信的
-//             htmlBorderLeftWidth = parseInt(getStyle(htmlDom, 'borderLeftWidth')),
-//             htmlBorderTopWidth = parseInt(getStyle(htmlDom, 'borderTopWidth'));
-//         if(browser.ie && !browser.isStrict){
-//             pos.left -= isNaN(htmlBorderLeftWidth) ? 2 : htmlBorderLeftWidth;
-//             pos.top  -= isNaN(htmlBorderTopWidth) ? 2 : htmlBorderTopWidth;
-//         }
-//     } else if (doc.getBoxObjectFor && !BUGGY_GECKO_BOX_OBJECT){ // gecko 1.9-
+        var htmlDom = doc.body,
+            // 在这里，不使用element.style.borderLeftWidth，只有computedStyle是可信的
+            htmlBorderLeftWidth = parseInt(getStyle(htmlDom, 'borderLeftWidth')),
+            htmlBorderTopWidth = parseInt(getStyle(htmlDom, 'borderTopWidth'));
+        if(browser.ie && !browser.isStrict){
+            pos.left -= isNaN(htmlBorderLeftWidth) ? 2 : htmlBorderLeftWidth;
+            pos.top  -= isNaN(htmlBorderTopWidth) ? 2 : htmlBorderTopWidth;
+        }
+    } else if (doc.getBoxObjectFor && !BUGGY_GECKO_BOX_OBJECT){ // gecko 1.9-
 
-//         // 1.9以下的Gecko，会忽略ancestors的scroll�?
-//         // https://bugzilla.mozilla.org/show_bug.cgi?id=328881 and
-//         // https://bugzilla.mozilla.org/show_bug.cgi?id=330619
+        // 1.9以下的Gecko，会忽略ancestors的scroll�?
+        // https://bugzilla.mozilla.org/show_bug.cgi?id=328881 and
+        // https://bugzilla.mozilla.org/show_bug.cgi?id=330619
 
-//         box = doc.getBoxObjectFor(element);
-//         var vpBox = doc.getBoxObjectFor(viewport);
-//         pos.left = box.screenX - vpBox.screenX;
-//         pos.top  = box.screenY - vpBox.screenY;
-//     } else { // safari/opera
-//         parent = element;
+        box = doc.getBoxObjectFor(element);
+        var vpBox = doc.getBoxObjectFor(viewport);
+        pos.left = box.screenX - vpBox.screenX;
+        pos.top  = box.screenY - vpBox.screenY;
+    } else { // safari/opera
+        parent = element;
 
-//         do {
-//             pos.left += parent.offsetLeft;
-//             pos.top  += parent.offsetTop;
+        do {
+            pos.left += parent.offsetLeft;
+            pos.top  += parent.offsetTop;
       
-//             // safari里面，如果遍历到了一个fixed的元素，后面的offset都不准了
-//             if (browser.isWebkit > 0 && getStyle(parent, 'position') == 'fixed') {
-//                 pos.left += doc.body.scrollLeft;
-//                 pos.top  += doc.body.scrollTop;
-//                 break;
-//             }
+            // safari里面，如果遍历到了一个fixed的元素，后面的offset都不准了
+            if (browser.isWebkit > 0 && getStyle(parent, 'position') == 'fixed') {
+                pos.left += doc.body.scrollLeft;
+                pos.top  += doc.body.scrollTop;
+                break;
+            }
             
-//             parent = parent.offsetParent;
-//         } while (parent && parent != element);
+            parent = parent.offsetParent;
+        } while (parent && parent != element);
 
-//         // 对body offsetTop的修�?
-//         if(browser.opera > 0 || (browser.isWebkit > 0 && getStyle(element, 'position') == 'absolute')){
-//             pos.top  -= doc.body.offsetTop;
-//         }
+        // 对body offsetTop的修�?
+        if(browser.opera > 0 || (browser.isWebkit > 0 && getStyle(element, 'position') == 'absolute')){
+            pos.top  -= doc.body.offsetTop;
+        }
 
-//         // 计算除了body的scroll
-//         parent = element.offsetParent;
-//         while (parent && parent != doc.body) {
-//             pos.left -= parent.scrollLeft;
-//             // see https://bugs.opera.com/show_bug.cgi?id=249965
-// //            if (!b.opera || parent.tagName != 'TR') {
-//             if (!browser.opera || parent.tagName != 'TR') {
-//                 pos.top -= parent.scrollTop;
-//             }
-//             parent = parent.offsetParent;
-//         }
-//     }
+        // 计算除了body的scroll
+        parent = element.offsetParent;
+        while (parent && parent != doc.body) {
+            pos.left -= parent.scrollLeft;
+            // see https://bugs.opera.com/show_bug.cgi?id=249965
+//            if (!b.opera || parent.tagName != 'TR') {
+            if (!browser.opera || parent.tagName != 'TR') {
+                pos.top -= parent.scrollTop;
+            }
+            parent = parent.offsetParent;
+        }
+    }
 
-//     return pos;
-// };
+    return pos;
+};
 
 
 
