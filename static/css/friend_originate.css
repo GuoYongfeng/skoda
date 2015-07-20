@@ -35,8 +35,9 @@ input {
 }
 .btn {
   margin-top: 0.25rem;
-  padding: 0.1rem 0;
+  height: 0.48rem;
   text-align: center;
+  line-height: 0.48rem;
   width: 100%;
   background-color: #f9b001;
   color: #34235b;
