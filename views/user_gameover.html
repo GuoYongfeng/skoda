@@ -29,8 +29,8 @@
 	
 	<div id="user_gameover">
 		<header>
-			<img src="../static/images/icon_header.png">
-			<h3>JANE狂奔7KM，距离终点还有3KM</h3>
+        <img src="<?php echo $this->v['inviti_user']['img_url'];?>">
+        <h3>我狂奔<?php echo $this->v['total_distance'];?>KM，距离终点还有<?php echo $this->v['span_distance'];?>KM</h3>
 		</header>
 		<section>
 			<div class="circle">
@@ -48,9 +48,9 @@
 			</div>
 		</section>
 		<p>
-			太棒了！还有3KM，邀请兄弟助力跑完可获得<strong>100M</strong>流量
+			太棒了！还有<?php echo $this->v['span_distance'];?>KM，邀请兄弟助力跑完可获得<strong>100M</strong>流量
 		</p>
-		<div class="btn">
+		<div class="btn" onclick="_hmt.push(['_share', 'fenxiang', 'click', 'fenxiang'])"  >
 			邀请兄弟助力拿礼包
 		</div>
 	</div>
@@ -59,65 +59,36 @@
 		<h3>Yeti奔跑榜</h3><span></span>
 		<hr>
 		<table>
-			<tr>
-				<td class="sort">1</td>
+            <?php
+            if(!empty($this->v['firend_list']))
+            {
+            $i=0;
+            foreach($this->v['firend_list'] as $v)
+            {
+            $i++;
+
+			$str = '<tr>
+				<td class="sort">'.$i.'</td>
 				<td>
-					<img src="../static/images/icon_header.png">
+					<img src="'.$v['img_url'].'">
 				</td>
-				<td class="name">
-					秋木子
-				</td>
+				<td class="name">'.$v['name'].' </td>
 				<td class="time">
-					07-17 15:26
+                    '.date('m-d H:i',strtotime($v['create_date'])).'
 				</td>
-				<td class="miles">1KM</td>
-			</tr>
-			<tr>
-				<td class="sort">2</td>
-				<td>
-					<img src="../static/images/icon_header.png">
-				</td>
-				<td class="name">
-					秋木子
-				</td>
-				<td class="time">
-					07-17 15:26
-				</td>
-				<td class="miles">1KM</td>
-			</tr>
-			<tr>
-				<td class="sort">3</td>
-				<td>
-					<img src="../static/images/icon_header.png">
-				</td>
-				<td class="name">
-					秋木子
-				</td>
-				<td class="time">
-					07-17 15:26
-				</td>
-				<td class="miles">1KM</td>
-			</tr>
-			<tr>
-				<td class="sort">4</td>
-				<td>
-					<img src="../static/images/icon_header.png">
-				</td>
-				<td class="name">
-					秋木子
-				</td>
-				<td class="time">
-					07-17 15:26
-				</td>
-				<td class="miles">1KM</td>
-			</tr>
+				<td class="miles">'.sprintf('%.1f',$v['distance']/1000).'KM</td>
+			</tr>';
+            echo $str;
+            }
+            }
+            ?>
 		</table>
 	</div>
 	<script type="text/javascript">
-		var data = {
-			cur: '70',
-			cur_has_score: true
-		};
+        var data = {
+cur: '<?php echo $this->v['percent']; ?>',
+     cur_has_score: true
+        };
 
 
 		var circle = {

@@ -27,8 +27,8 @@
 <body>
 	<div id="friend_gameover">
 		<header>
-			<img src="../static/images/icon_header.png">
-			<h3>恭喜！JANE已经跑完了全程！</h3>
+        <img src="<?php echo $this->v['inviti_user']['img_url'];?>">
+			<h3>恭喜你已经跑完了全程！</h3>
 		</header>
 		<section>
 			<div class="circle">
@@ -48,75 +48,74 @@
 		<p>
 			太棒了！兄弟们帮你跑完了<br>你获得了<strong>100M</strong>流量！
 		</p>
-		<form action="" method="POST">
-			<input type="text" class="phone" name="phone" placeholder="请输入您的手机号">
-			<input type="text" class="name" name="name" placeholder="请输入您的姓名">
-			<input type="submit" class="btn" value="领取"></input>
-		</form>
+        <div id="form">
+            <input type="text"  id="id_phone" class="phone" name="phone" placeholder="请输入您的手机号">
+            <input type="text" id="id_name" class="name" name="name" placeholder="请输入您的姓名">
+            <input type="button" id="id_btn" class="btn" value="领取"></input>
+        </div>
 	</div>
 	<div class="friend_info">
 		<h3>Yeti奔跑榜</h3><span></span>
 		<hr>
 		<table>
-			<tr>
-				<td class="sort">1</td>
+            <?php
+            if(!empty($this->v['firend_list']))
+            {
+            $i=0;
+            foreach($this->v['firend_list'] as $v)
+            {
+            $i++;
+
+			$str = '<tr>
+				<td class="sort">'.$i.'</td>
 				<td>
-					<img src="../static/images/icon_header.png">
+					<img src="'.$v['img_url'].'">
 				</td>
-				<td class="name">
-					秋木子
-				</td>
+				<td class="name">'.$v['name'].' </td>
 				<td class="time">
-					07-17 15:26
+                    '.date('m-d H:i',strtotime($v['create_date'])).'
 				</td>
-				<td class="miles">1KM</td>
-			</tr>
-			<tr>
-				<td class="sort">2</td>
-				<td>
-					<img src="../static/images/icon_header.png">
-				</td>
-				<td class="name">
-					秋木子
-				</td>
-				<td class="time">
-					07-17 15:26
-				</td>
-				<td class="miles">1KM</td>
-			</tr>
-			<tr>
-				<td class="sort">3</td>
-				<td>
-					<img src="../static/images/icon_header.png">
-				</td>
-				<td class="name">
-					秋木子
-				</td>
-				<td class="time">
-					07-17 15:26
-				</td>
-				<td class="miles">1KM</td>
-			</tr>
-			<tr>
-				<td class="sort">4</td>
-				<td>
-					<img src="../static/images/icon_header.png">
-				</td>
-				<td class="name">
-					秋木子
-				</td>
-				<td class="time">
-					07-17 15:26
-				</td>
-				<td class="miles">1KM</td>
-			</tr>
+				<td class="miles">'.sprintf('%.1f',$v['distance']/1000).'KM</td>
+			</tr>';
+            echo $str;
+            }
+            }
+            ?>
 		</table>
 	</div>
 
 
 	<script type="text/javascript">
+        $("#id_btn").bind('click',function()
+                {
+                var phone = $("#id_phone").val();
+                var name = $("#id_name").val();
+                if(phone=="")
+                {
+                alert("请填写手机号");
+                return;
+                }
+                if(name=="") 
+                {
+                alert("请填写姓名");
+                return;
+                }
+                if (!phone.match(/^1\d{10}$/))
+                {
+                alert("请正确填写手机号");
+                return;
+                }
+                $.ajax({
+                type: "POST",
+                url: "/weixin/_receive_liuliang",
+                data: "name="+name+"&phone="+phone,
+                success: function(data){
+                location.reload();
+}
+});
+                });
 		var data = {
-			cur: '70',
+cur: '<?php echo $this->v['percent'];?>',
 			cur_has_score: true
 		};
 
