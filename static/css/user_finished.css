@@ -37,7 +37,7 @@ form {
 }
 .phone {
   margin-top: 0.25rem;
-  height: 0.48rem;
+  padding: 0.1rem 0;
   text-align: center;
   line-height: 0.48rem;
   width: 100%;
