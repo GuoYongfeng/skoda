@@ -50,9 +50,22 @@
 			太棒了还有3KM就能拿到超级礼包啦！
 		</p>
 		<div class="btn">帮他继续跑</div>
-	
-		
 	</div>
+	<script type="text/javascript">
+		var share_title = '极地奔跑 兄弟助力';
+		var share_desc = '奔跑吧，Yeti！极地奔跑，兄弟助力，人人都领100M！';
+		var share_url = 'www.ppzuche.com';
+		var share_logo = 'http://cdn.ppzuche.cn/img/1505/3/150531ec6b52eb21.jpg';
+
+		var weichat = new weichatSDK({
+			checkJSApi : false,
+			debug : false,
+		    title: share_title,
+		    desc: share_desc,
+		    link: share_url,
+		    imgUrl: share_logo
+		});
+	</script>
 	<script type="text/javascript">
 		var data = {
 			cur: '70',
