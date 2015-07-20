@@ -1,7 +1,11 @@
 body {
-  background: url('../images/index.png') no-repeat;
-  background-size: 100% auto;
-  background-attachment: fixed;
+ // background: url('../images/index.png') no-repeat;
+// background-position: center center;
+  //background-size: contain;
+  //-webkit-background-size: 100% auto;
+  //background-size: cover;
+  //background-size: 100% auto;
+ // background-attachment: fixed;
 }
 .wrap {
   width: 100%;
