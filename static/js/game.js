@@ -86,6 +86,13 @@ var Game = {
 		
 		this.dropDown();
 
+		$(document).on('click', function(e){
+			window.open('./user_gameover.html');
+		})
+	},
+
+	fuck: function(){
+
 	},
 
 	leftCtl: function(){
