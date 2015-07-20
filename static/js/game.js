@@ -207,17 +207,19 @@ var Game = {
 		var _this = this;
 		$('.right').on('tap', function(e){
 			_this.carMove('right');
+			
 			e.preventDefault();
 		});
 	},
 
 	carMove: function(dir){
 		var oLeft = $('.car').offset().left;
-		var step = 100;
+		var step = 120;
 		this.boundCheck();
 
 		if( 'left' == dir && !this.moveLeftFlag ){
 			$('.car').animate({left: oLeft - step}, 800, 'bounce');
+			
 		}else if( 'right' == dir && !this.moveRightFlag ){
 			$('.car').animate({left: oLeft + step}, 800, 'bounce');
 		}
@@ -226,19 +228,23 @@ var Game = {
 	},
 
 	boundCheck: function(){
-		if ( $('.car').offset().left < 15 ) {
-			$('.car').offset().left = 15;
+		if ( $('.car').offset().left < 40 ) {
+			console.log('moveLeftFlag')
+			$('.car').css({left: '40'});
 			this.moveLeftFlag = true;
-		}else{
-			this.moveLeftFlag = false;
 		}
 
-		if ( $('.car').offset().left > 290 ) {
-			$('.car').offset().left = 290;
-			this.moveRightFlag = true;
-		} else {
+		if($('.car').offset().left > 40 && $('.car').offset().left < 250){
+			console.log('double')
+			this.moveLeftFlag = false;
 			this.moveRightFlag = false;
 		}
+
+		if ( $('.car').offset().left > 250 ) {
+			console.log('moveRightFlag')
+			$('.car').css({left: '250'});
+			this.moveRightFlag = true;
+		} 
 
 	},
 
@@ -260,7 +266,7 @@ var Game = {
 					
 				_this.pop(eval(s));
 				$.ajax({
-					method: "POST",
+					type: "POST",
 					data: {
 						distance: (30 + eval(s))*500
 					},
