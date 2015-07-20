@@ -3,7 +3,7 @@
  * 开汽车小游戏
  */
 
-var times = 60;
+var times = 30;
 
 /**
  * 游戏基类
@@ -218,7 +218,7 @@ var Game = {
 			if(times > 0){
 				--times;
 			
-				var timeWidth = (times / 60) * 100 + '%';
+				var timeWidth = (times / 30) * 100 + '%';
 
 				$('#count').text(times);
 				$('.time').css({width: timeWidth });

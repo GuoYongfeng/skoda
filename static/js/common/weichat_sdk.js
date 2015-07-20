@@ -7,10 +7,10 @@ var weichatSDK = function(option){
 	this._mOption = {
 		checkJSApi : option.checkJSApi || false,
 		debug : option.debug || false,
-		title : option.title || "极地奔跑，兄弟助力",
-		desc : option.desc || "大众SKODA",
-		link : option.link  || "http://ppzuche.com",
-		imgUrl : option.imgUrl|| "http://cdn.ppzuche.com/static/pc/common/widget/logo/images/logo.png"
+		title : option.title || "极地奔跑 兄弟助力",
+		desc : option.desc || "奔跑吧，Yeti！极地奔跑，兄弟助力，人人都领100M！",
+		link : option.link  || "",
+		imgUrl : option.imgUrl|| ""
 	};
 	this.init();
 };
@@ -33,7 +33,7 @@ weichatSDK.pri = {
 	 * @url {String} [API post请求地址]
 	 * @type {String}
 	 */
-	url : "/thirdPlugin/weiChatApi",
+	url : "./weixin/get_weichat_ticket",
 	/**
 	 * getSdkApi post请求获取SDK API
 	 * @param  {Function} callback [description]

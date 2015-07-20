@@ -35,9 +35,8 @@ input {
 }
 .phone {
   margin-top: 0.25rem;
-  height: 0.48rem;
+  padding: 0.1rem 0;
   text-align: center;
-  line-height: 0.48rem;
   width: 100%;
   color: #34235b;
   font-size: 0.17rem;
@@ -45,9 +44,8 @@ input {
 }
 .btn {
   margin-top: 0.15rem;
-  height: 0.48rem;
+  padding: 0.1rem 0;
   text-align: center;
-  line-height: 0.48rem;
   width: 100%;
   background-color: #f9b001;
   color: #34235b;
