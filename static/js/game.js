@@ -75,6 +75,72 @@ var Game = {
 		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
 		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
 
+		[0.7, 0.7, 170, 270 + 2400, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 2400, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 2400, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 2400, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 2400, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 2400, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 2400, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 2400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
+
+		[0.7, 0.7, 170, 270 + 2400, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 2400, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 2400, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 2400, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 2400, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 2400, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 2400, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 2400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
+
+		[0.7, 0.7, 170, 270 + 2400, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 2400, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 2400, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 2400, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 2400, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 2400, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 2400, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 2400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
+		
+		[0.7, 0.7, 170, 270 + 2400, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 2400, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 2400, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 2400, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 2400, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 2400, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 2400, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 2400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
+
+		[0.7, 0.7, 170, 270 + 2400, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 2400, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 2400, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 2400, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 2400, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 2400, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 2400, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 2400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
+
+		[0.7, 0.7, 170, 270 + 2400, "../static/images/money.png", false, -2],
+		[0.7, 0.7, 130, 110 + 2400, "../static/images/gift.png", false, -2],
+		[0.7, 0.7, 30, 370 + 2400, "../static/images/stone.png", false, -2],
+		[0.7, 0.7, 250, 200 + 2400, "../static/images/obstacle.png", false, -2],
+		[1.3, 0.75, 0, 30 + 2400, "../static/images/left_double_small.png", false],
+		[0.85, 0.87, 0, 200 + 2400, "../static/images/left_single_big.png", false],
+		[0.75, 0.75, 0, 440 + 2400, "../static/images/left_single_small.png", false],
+		[1.18, 0.9, 0, 400 + 2400, "../static/images/right_double_small.png", true],
+		[0.8, 0.8, 0, 220 + 2400, "../static/images/right_single_big.png", true],
+		[0.61, 0.64, 0, 40 + 2400, "../static/images/right_single_small.png", true],
+
 	],
 	init: function(){
 		var _this = this;
@@ -172,7 +238,7 @@ var Game = {
 	},
 
 	dropDown: function(){
-		var step = 0.5;
+		var step = 2;
 		var _this = this;
 
 		var dropClock = setInterval(function(){
