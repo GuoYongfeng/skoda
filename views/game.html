@@ -16,6 +16,7 @@
 	<script type="text/javascript" src="../static/js/common/weichat_sdk.js"></script>
 	<script type="text/javascript" src="../static/js/common/event_canter.js"></script>
 	<script type="text/javascript" src="../static/js/common/modal.js"></script>
+	<!-- // <script type="text/javascript" src="../static/js/common/score.js"></script> -->
 	<script type="text/javascript" src="../static/js/game.js"></script>
 	<script>
 		var _hmt = _hmt || [];
@@ -33,7 +34,7 @@
 		<div class="time_bg">
 			<div class="time"></div>
 		</div>
-		<span><span id="count"></span>S</span>
+		<span><input type="text" id="count" value="">S</span>
 	</div>
 	<div class="game_element_container">
 		
@@ -43,12 +44,15 @@
 		<div class="car"></div>
 		<div class="right ctrl_common"></div>
 	</div>
+	<span id="toast"></span>
+	<!-- <audio controls="controls" autoplay="autoplay">
+	  <source src="../static/media/bj.mp3" type="audio/mp3" />
+	</audio> -->
+
 	<script type="text/javascript">
 
 		Game.init();
 	
-		
-
 	</script>
 </body>
 </html>
