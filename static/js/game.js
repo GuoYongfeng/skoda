@@ -136,7 +136,8 @@ var Game = {
 
 	toast: function(res){
 		console.log(res);
-		$('#toast').addClass('toast').text(res * 500 + 'M');
+
+		$('#toast').addClass('toast').text(res * 100 + 'M');
 		var toastTimer = null;
 
 		if(toastTimer){
@@ -229,19 +230,16 @@ var Game = {
 
 	boundCheck: function(){
 		if ( $('.car').offset().left < 40 ) {
-			console.log('moveLeftFlag')
 			$('.car').css({left: '40'});
 			this.moveLeftFlag = true;
 		}
 
 		if($('.car').offset().left > 40 && $('.car').offset().left < 250){
-			console.log('double')
 			this.moveLeftFlag = false;
 			this.moveRightFlag = false;
 		}
 
 		if ( $('.car').offset().left > 250 ) {
-			console.log('moveRightFlag')
 			$('.car').css({left: '250'});
 			this.moveRightFlag = true;
 		} 
@@ -303,7 +301,20 @@ var Game = {
 
 		setInterval(function(){
 			_this.targets.forEach(function(item, index, input){
-				if((item.offset().top - $('.car').offset().top) < 100 && (item.offset().top - $('.car').offset().top) > 60 ) {
+				var iTop = item.offset().top;
+				var iLeft = item.offset().left;
+				var iWidth = item.offset().width;
+
+				var cTop = $('.car').offset().top;
+				var cLeft = $('.car').offset().left;
+				var cWidth = $('.car').offset().width;
+
+				if(
+					(iTop - cTop) < 100 
+					&& (iTop - cTop) > 20  
+					&& (iWidth + iLeft - cLeft) < 200 
+					// (iLeft - cLeft - cWidth) < 260)
+				) {
 					
 					event_center.fire('change_miles', item.data('score'));
 					
