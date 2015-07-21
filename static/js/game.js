@@ -215,32 +215,32 @@ var Game = {
 
 	carMove: function(dir){
 		var oLeft = $('.car').offset().left;
-		var step = 120;
+		var step = 100;
 		this.boundCheck();
 
 		if( 'left' == dir && !this.moveLeftFlag ){
-			$('.car').animate({left: oLeft - step}, 800, 'bounce');
+			$('.car').animate({left: oLeft - step}, 800, 'easein');
 			
 		}else if( 'right' == dir && !this.moveRightFlag ){
-			$('.car').animate({left: oLeft + step}, 800, 'bounce');
+			$('.car').animate({left: oLeft + step}, 800, 'easein');
 		}
 
 		
 	},
 
 	boundCheck: function(){
-		if ( $('.car').offset().left < 50 ) {
-			$('.car').css({left: '50'});
+		if ( $('.car').offset().left < 40 ) {
+			$('.car').css({left: '40'});
 			this.moveLeftFlag = true;
 		}
 
-		if($('.car').offset().left > 40 && $('.car').offset().left < 250){
+		if($('.car').offset().left > 40 && $('.car').offset().left < 230){
 			this.moveLeftFlag = false;
 			this.moveRightFlag = false;
 		}
 
-		if ( $('.car').offset().left > 250 ) {
-			$('.car').css({left: '250'});
+		if ( $('.car').offset().left > 230 ) {
+			$('.car').css({left: '230'});
 			this.moveRightFlag = true;
 		} 
 
