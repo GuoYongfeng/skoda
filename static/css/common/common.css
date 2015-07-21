@@ -201,23 +201,17 @@
 }
 .ui-modal .main .fix_href {
   display: inline-block;
-  position: absolute;
-  width: 100%;
-  height: 0.4rem;
-  margin-bottom: -0.8rem;
-  text-align: center;
-}
-.ui-modal .main .btn_wrap{
-  display: inline-block;
   font-size: 0.16rem;
   border: none;
   text-align: center;
   background-color: #fab001;
   width: 80%;
-  padding: 0.1rem 0;
   margin: 0.0rem 10% 0.2rem 10%;
-  color: #35245a;
   border-radius: 0.05rem;
+  padding: 0.1rem 0;
+}
+.ui-modal .main span{
+  color: #35245a;
 }
 .ui-modal .main ul{
   overflow: hidden;

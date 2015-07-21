@@ -31,20 +31,15 @@ Modal.prototype = {
 		
 		var html = [];
 		html.push('<div class="main">');
-			// if(this.conf.title !== ''){
-			// 	html.push('<div class="title">');
-			// 		html.push('<span>'+this.conf.title+'</span>');
-			// 	html.push('</div>');
-			// }
+
 			html.push('<div class="content">');
 				html.push(this.conf.content);
 			html.push('</div>');
 
-			// if(this.conf.confirmText){
-				html.push('<a href="/weixin/game_end" class="fix_href">');
-					html.push('<a class="btn_wrap" href="/weixin/game_end">'+this.conf.confirmText+'</a>');
-				html.push('</a>');
-			// }
+			html.push('<a href="/weixin/game_end" class="fix_href">');
+				html.push('<span class="btn_wrap">'+this.conf.confirmText+'</span>');
+			html.push('</a>');
+			
 
 		html.push("</div>");
 		this.dom.instance.html(html.join(''));
