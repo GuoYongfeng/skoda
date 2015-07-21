@@ -199,11 +199,8 @@
   line-height: 0.24rem;
   text-align: center;
 }
-.ui-modal .main .control {
+.ui-modal .main .btn_wrap {
   width: 100%;
-  border-top: 1px solid #ccc;
-  height: 0.5rem;
-  line-height: 0.5rem;
   text-align: center;
 }
 .ui-modal .main a {

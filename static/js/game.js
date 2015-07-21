@@ -308,14 +308,13 @@ var Game = {
 				var cTop = $('.car').offset().top;
 				var cLeft = $('.car').offset().left;
 				var cWidth = $('.car').offset().width;
-
+				
 				if(
 					(iTop - cTop) < 100 
 					&& (iTop - cTop) > 20  
 					&& (iWidth + iLeft - cLeft) < 200 
 					// (iLeft - cLeft - cWidth) < 260)
 				) {
-					
 					event_center.fire('change_miles', item.data('score'));
 					item.remove();
 				}
