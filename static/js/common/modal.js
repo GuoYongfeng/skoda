@@ -31,16 +31,12 @@ Modal.prototype = {
 		
 		var html = [];
 		html.push('<div class="main">');
-
 			html.push('<div class="content">');
 				html.push(this.conf.content);
 			html.push('</div>');
-
 			html.push('<a href="/weixin/game_end" class="fix_href">');
 				html.push('<span class="btn_wrap">'+this.conf.confirmText+'</span>');
 			html.push('</a>');
-			
-
 		html.push("</div>");
 		this.dom.instance.html(html.join(''));
 		this.dom.container = $('body');
