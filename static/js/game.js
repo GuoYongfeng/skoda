@@ -229,8 +229,8 @@ var Game = {
 	},
 
 	boundCheck: function(){
-		if ( $('.car').offset().left < 40 ) {
-			$('.car').css({left: '40'});
+		if ( $('.car').offset().left < 50 ) {
+			$('.car').css({left: '50'});
 			this.moveLeftFlag = true;
 		}
 
@@ -310,9 +310,9 @@ var Game = {
 				var cWidth = $('.car').offset().width;
 				
 				if(
-					(iTop - cTop) < 100 
+					(iTop - cTop) < 140 
 					&& (iTop - cTop) > 20  
-					&& (iWidth + iLeft - cLeft) < 200 
+					// && (iWidth + iLeft - cLeft) < 200 
 					// (iLeft - cLeft - cWidth) < 260)
 				) {
 					event_center.fire('change_miles', item.data('score'));

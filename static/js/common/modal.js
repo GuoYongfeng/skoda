@@ -41,9 +41,9 @@ Modal.prototype = {
 			html.push('</div>');
 
 			// if(this.conf.confirmText){
-				html.push('<div class="btn_wrap">');
-					html.push('<a href="/weixin/game_end">'+this.conf.confirmText+'</a>');
-				html.push('</div>');
+				html.push('<a href="/weixin/game_end" class="fix_href">');
+					html.push('<a class="btn_wrap" href="/weixin/game_end">'+this.conf.confirmText+'</a>');
+				html.push('</a>');
 			// }
 
 		html.push("</div>");

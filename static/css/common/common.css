@@ -199,13 +199,16 @@
   line-height: 0.24rem;
   text-align: center;
 }
-.ui-modal .main .btn_wrap {
+.ui-modal .main .fix_href {
+  display: inline-block;
   width: 100%;
+  height: 0.4rem;
+  margin-bottom: -0.4rem;
   text-align: center;
 }
-.ui-modal .main a {
-  font-size: 0.16rem;
+.ui-modal .main .btn_wrap{
   display: inline-block;
+  font-size: 0.16rem;
   border: none;
   text-align: center;
   background-color: #fab001;
