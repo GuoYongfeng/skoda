@@ -157,8 +157,8 @@
 .share_mask{
   display: none;
   width: 100%;
-  height: 5.5rem;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
   background-image: url(../../images/share_mask.png);
   background-size: 100% 20%;
@@ -208,7 +208,7 @@
 }
 .ui-modal .main a {
   font-size: 0.16rem;
-  display: inherit;
+  display: inline-block;
   border: none;
   text-align: center;
   background-color: #fab001;

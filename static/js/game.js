@@ -317,7 +317,7 @@ var Game = {
 				) {
 					
 					event_center.fire('change_miles', item.data('score'));
-					
+					item.remove();
 				}
 			});
 		}, 1000);
