@@ -27,4 +27,19 @@
 <body>
 	<a onclick="_hmt.push(['_go_yiche', 'nav', 'click', 'go_url'])"  href="http://m.yichemall.com/zhuanti/yeti/">获得更多优惠</a>
 </body>
+	<script type="text/javascript">
+        var share_title = '<?php echo $this->v['share_title']; ?>';
+        var share_desc = '<?php echo $this->v['share_desc'];?>';
+        var share_url = '<?php echo $this->v['share_url'];?>';
+        var share_logo = '<?php echo $this->v['share_logo'];?>';
+
+		var weichat = new weichatSDK({
+			checkJSApi : false,
+			debug : false,
+		    title: share_title,
+		    desc: share_desc,
+		    link: share_url,
+		    imgUrl: share_logo
+		});
+	</script>
 </html>
