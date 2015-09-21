@@ -7,8 +7,8 @@ var weichatSDK = function(option){
 	this._mOption = {
 		checkJSApi : option.checkJSApi || false,
 		debug : option.debug || false,
-		title : option.title || "极地奔跑 兄弟助力",
-		desc : option.desc || "奔跑吧，Yeti！极地奔跑，兄弟助力，人人都领100M！",
+		title : option.title || "",
+		desc : option.desc || "",
 		link : option.link  || "",
 		imgUrl : option.imgUrl|| ""
 	};
